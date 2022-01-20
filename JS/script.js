@@ -1,6 +1,6 @@
 // saudação por horário
 
-var now = new Date
+var now = new Date()
 var hora = now.getHours()
 
 var oi = window.document.getElementById('text');
@@ -15,8 +15,8 @@ if (hora >= 5 && hora < 12){
     satelite.style.zIndex = '0'
     document.body.style.background = '#4896D3'
     //estrela.style.display = "none";
-    estrela.src = './Imagens/parallax/nuvens.png/'
-    estrela.style.height = "120%"
+    estrela.src = './Imagens/parallax/nuvens.png'
+    estrela.style.height = "100%"
     estrela.style.zIndex = '9'
 } else if (hora >= 12 && hora < 18){
     oi.innerHTML = 'Boa tarde!'
@@ -26,8 +26,8 @@ if (hora >= 5 && hora < 12){
     satelite.style.zIndex = '0'
     document.body.style.background = 'linear-gradient(-45deg, #007BC3, #38BDF2)'
     //estrela.style.display = "none";
-    estrela.src = './Imagens/parallax/nuvens.png/'
-    estrela.style.height = "120%"
+    estrela.src = './Imagens/parallax/nuvens.png'
+    estrela.style.height = "100%"
     estrela.style.zIndex = '9'
 } else {
     oi.innerHTML = 'Boa noite!'

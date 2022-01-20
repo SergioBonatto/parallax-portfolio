@@ -10,24 +10,33 @@
     <link rel="stylesheet" type="text/css" href="./CSS/style.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     
-    
+    <!-- Fonte Awesome -->
+    <script src="https://kit.fontawesome.com/4237bc5923.js" crossorigin="anonymous"></script> 
   </head>
 
   <body>
     <header>
       <!--barra de navegação-->
       <a href="#" class="logo">Bonatto</a>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#sec">Sobre</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="#"class="active">Contato</a></li>
-      </ul>
+
+      <div id="menuToggle">
+        <input type="checkbox" id="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="menu">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="#">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+     </div>
     </header>
     
     <!--parallax-->
     <section>
-      <img src="./Imagens/parallax/ceu-estrelado.png" alt="céu estrelado" id="stars">
+      <img src="./Imagens/parallax/ceu-estrelado.png" alt="nuvens" id="stars">
       <img src="./Imagens/parallax/lua.png" alt="lua" id="moon">
       <img src="./Imagens/parallax/montanha-fundo.png" alt="montanha ao fundo" id="mountains_behind">
       <img src="./Imagens/parallax/montanha-meio.png" alt="montanha no meio" id="mountains_between">
@@ -38,27 +47,24 @@
       <img src="./Imagens/parallax/grama1.png" alt="grama" id="grama" style="z-index: 11;">
     </section>
     
-    <div class="sec" id="sec">
-      <h2>Contato</h2>
-      
-      
+
     </div>
         <!-- CONTATO -->
-        <section id="contato">
-          <div class="container">
-          <div class="section-title text-center" style="color: #AFAFAF">
-            <h2>Contato</h2>
+        <div class="sec" id="sec">
+          <h2>Contato</h2>
+          <div class="sobre mensagem">
+            <p>Entre em contato comigo por meio das minhas redes sociais e saiba mais!</p>
           </div>
-        </div> 
-          <div class="container list-group contatos">
-            <ul><a class="links" href="https://wa.me/message/7IBQOXRDLNXAG1"> <i class="fab fa-whatsapp"></i>    Whatsapp</a></ul>
+          <div class="sobre icones">
+            <ul><a class="links" href="https://wa.me/message/QAVUTY4DJA4EG1"> <i class="fab fa-whatsapp"></i>    Whatsapp</a></ul>
             <ul><a class="links" href="https://github.com/SergioBonatto"><i class="fab fa-github"></i>   GitHub</a></ul>
             <ul><a class="links" href="https://www.linkedin.com/in/sergiobonatto/"><i class="fab fa-linkedin"></i>    Linkedin</a></ul>
             <ul><a class="links" href="https://www.instagram.com/sergio_bonatto/"><i class="fab fa-instagram"></i>   Instagram</a></ul>
             <ul><a class="links" href="https://www.behance.net/sfbonatto"><i class="fab fa-behance-square"></i>   Behance</a></ul>
             <ul><a class="links" href="https://www.facebook.com/Bonatto785/"><i class="fab fa-facebook"></i>   Facebook</a></ul>
           </div>
-        </section> 
+
+
       <script>
         let stars = document.getElementById('stars')
         let moon = document.getElementById('moon')
@@ -84,6 +90,11 @@
             header.style.top = `${value * 0.5}px`;
           })
       </script>
+
+      <!-- FOOTER -->
+      <footer>
+       <p>Desenvolvido por  <a class="links" href="index.html"> Sergio Bonatto&trade;</a></p>
+      </footer>
   </body>
   <script src="./JS/script.js" charset="utf-8"></script>
   

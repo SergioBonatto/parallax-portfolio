@@ -5,7 +5,7 @@
     <!-- Meta descrição -->
     <meta charset="UTF-8">
     <meta name = "description" content = "Viajante do tempo, madao, caçador de goblins, membro da akatsuki e do partido pirata, nerd, lindo, vegano não-praticante e professor nas horas vagas">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
 
@@ -22,18 +22,32 @@
   <body>
     <header>
       <!--barra de navegação-->
+
       <a href="#" class="logo">Bonatto</a>
-      <ul>
-        <li><a href="#" class="active">Inicio</a></li>
-        <li><a href="#sec">Sobre</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
+
+      <div id="menuToggle">
+        <input type="checkbox" id="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="menu">
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#sec">Sobre</a></li>
+            <li><a href="#">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+     </div>
+
+
+
+      
+      
     </header>
     
     <!--parallax-->
     <section>
-      <img src="./Imagens/parallax/ceu-estrelado.png" alt="céu estrelado" id="stars">
+      <img src="./Imagens/parallax/ceu-estrelado.png" alt="nuvens" id="stars">
       <img src="./Imagens/parallax/lua.png" alt="lua" id="moon">
       <img src="./Imagens/parallax/montanha-fundo.png" alt="montanha ao fundo" id="mountains_behind">
       <img src="./Imagens/parallax/montanha-meio.png" alt="montanha no meio" id="mountains_between">
@@ -47,12 +61,16 @@
     <div class="sec" id="sec">
       <h2>Quem sou</h2>
       <div class="sobre">
-        <div id='sobre'><p>Eu sou um UI/UX designer santanense que adora um design limpo, simples & expressivo. Eu também gosto de criar identidades de marcas, ícones & me aventurar pelo desenvolvimento web.<br></br>Sou pai do Matteo, teólogo reformado, autodidata, amante da filosofia de código aberto, nerd e apaixonado por bebidas amargas.</p>
+        <div id='sobre'>
+          <p>Eu sou um UI/UX designer santanense que adora um design limpo, simples & expressivo. Eu também gosto de criar identidades de marcas, ícones & me aventurar pelo desenvolvimento web.</p>
+          
+          <p>Sou pai do Matteo, teólogo reformado, autodidata, amante da filosofia de código aberto, nerd e apaixonado por bebidas amargas.</p>
 
-          <img src="./Imagens/perfil.png" alt="Eu" id="eu""">
+          
       </div>
+      <img src="./Imagens/perfil.png" alt="Eu" id="eu">
       
-    </div>
+    
     </div>
       <script>
         let stars = document.getElementById('stars')
@@ -79,6 +97,10 @@
             header.style.top = `${value * 0.5}px`;
           })
       </script>
+          <!-- FOOTER -->
+    <footer>
+      <p>Desenvolvido por<a class="links pe" href="#">Sergio Bonatto&trade;</a></p>
+    </footer>
   </body>
   <script src="./JS/script.js" charset="utf-8"></script>
   
