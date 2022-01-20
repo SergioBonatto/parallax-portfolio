@@ -14,15 +14,21 @@ if (hora >= 5 && hora < 12){
     satelite.style.marginTop = '100px'
     satelite.style.zIndex = '0'
     document.body.style.background = '#4896D3'
-    estrela.style.display = "none";
+    //estrela.style.display = "none";
+    estrela.src = './Imagens/parallax/nuvens.png/'
+    estrela.style.height = "120%"
+    estrela.style.zIndex = '9'
 } else if (hora >= 12 && hora < 18){
     oi.innerHTML = 'Boa tarde!'
     satelite.src = './Imagens/parallax/sol.png'
     satelite.style.height = '100px'
     satelite.style.marginTop = '100px'
     satelite.style.zIndex = '0'
-    document.body.style.background = '#4896D3'
-    estrela.style.display = "none";
+    document.body.style.background = 'linear-gradient(-45deg, #007BC3, #38BDF2)'
+    //estrela.style.display = "none";
+    estrela.src = './Imagens/parallax/nuvens.png/'
+    estrela.style.height = "120%"
+    estrela.style.zIndex = '9'
 } else {
     oi.innerHTML = 'Boa noite!'
 }
