@@ -199,6 +199,7 @@ section img#marco
     margin-bottom: 11px;
     padding-bottom: 33rem;
     flex-direction: column;
+    white-space: nowrap
   }
 
 #sobre p{
