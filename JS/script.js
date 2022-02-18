@@ -3,37 +3,35 @@
 var now = new Date()
 var hora = now.getHours()
 
-var oi = window.document.getElementById('text');
+var oi = window.document.getElementById('text')
 var satelite = window.document.getElementById('moon')
-var estrela = window.document.getElementById('stars');
+var estrela = window.document.getElementById('stars')
 
-if (hora >= 5 && hora < 12){
-    oi.innerHTML = 'Bom dia!'
-    satelite.src = './Imagens/parallax/sol.png'
-    satelite.style.height = '100px'
-    satelite.style.marginTop = '100px'
-    satelite.style.zIndex = '0'
-    document.body.style.background = '#4896D3'
-    //estrela.style.display = "none";
-    estrela.src = './Imagens/parallax/nuvens.png'
-    estrela.style.height = "100%"
-    estrela.style.zIndex = '9'
-} else if (hora >= 12 && hora < 18){
-    oi.innerHTML = 'Boa tarde!'
-    satelite.src = './Imagens/parallax/sol.png'
-    satelite.style.height = '100px'
-    satelite.style.marginTop = '100px'
-    satelite.style.zIndex = '0'
-    document.body.style.background = 'linear-gradient(-45deg, #007BC3, #38BDF2)'
-    //estrela.style.display = "none";
-    estrela.src = './Imagens/parallax/nuvens.png'
-    estrela.style.height = "100%"
-    estrela.style.zIndex = '9'
+if (hora >= 5 && hora < 15) {
+  oi.innerHTML = 'Bom dia!'
+  satelite.src = './Imagens/parallax/sol.png'
+  satelite.style.height = '100px'
+  satelite.style.marginTop = '100px'
+  satelite.style.zIndex = '0'
+  document.body.style.background = '#4896D3'
+  //estrela.style.display = "none";
+  estrela.src = './Imagens/parallax/nuvens.png'
+  estrela.style.height = '100%'
+  estrela.style.zIndex = '9'
+} else if (hora >= 15 && hora < 21) {
+  oi.innerHTML = 'Boa tarde!'
+  satelite.src = './Imagens/parallax/sol.png'
+  satelite.style.height = '100px'
+  satelite.style.marginTop = '100px'
+  satelite.style.zIndex = '0'
+  document.body.style.background = 'linear-gradient(-45deg, #007BC3, #38BDF2)'
+  //estrela.style.display = "none";
+  estrela.src = './Imagens/parallax/nuvens.png'
+  estrela.style.height = '100%'
+  estrela.style.zIndex = '9'
 } else {
-    oi.innerHTML = 'Boa noite!'
+  oi.innerHTML = 'Boa noite!'
 }
-
-
 
 /*
 
