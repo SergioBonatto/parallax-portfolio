@@ -49,7 +49,7 @@ html {
 body {
   font: 400 1rem var(--body-font);
   color: var(--text-color);
-  background: #1e2d59;
+  background: #213773;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -326,7 +326,6 @@ section img#grama {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
-  background: #2fb3eb;
 }
 
 #home::before {
