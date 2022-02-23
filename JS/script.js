@@ -7,7 +7,7 @@ var oi = window.document.getElementById('text')
 var satelite = window.document.getElementById('moon')
 var estrela = window.document.getElementById('stars')
 
-if (hora >= 5 && hora < 15) {
+if (hora >= 5 && hora < 12) {
   oi.innerHTML = 'Bom dia!'
   satelite.src = './Imagens/parallax/sol.png'
   satelite.style.height = '100px'
@@ -18,7 +18,7 @@ if (hora >= 5 && hora < 15) {
   estrela.src = './Imagens/parallax/nuvens.png'
   estrela.style.height = '90%'
   estrela.style.zIndex = '1'
-} else if (hora >= 15 && hora < 21) {
+} else if (hora >= 12 && hora < 18) {
   oi.innerHTML = 'Boa tarde!'
   satelite.src = './Imagens/parallax/sol.png'
   satelite.style.height = '100px'
