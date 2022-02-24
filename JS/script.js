@@ -1,11 +1,11 @@
 // saudação por horário
 
-var now = new Date()
-var hora = now.getHours()
+let now = new Date()
+let hora = now.getHours()
 
-var oi = window.document.getElementById('text')
-var satelite = window.document.getElementById('moon')
-var estrela = window.document.getElementById('stars')
+let oi = window.document.getElementById('text')
+let satelite = window.document.getElementById('moon')
+let estrela = window.document.getElementById('stars')
 
 if (hora >= 5 && hora < 12) {
   oi.innerHTML = 'Bom dia!'
