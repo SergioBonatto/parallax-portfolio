@@ -46,7 +46,6 @@ let paralax = () => {
   let marco = document.getElementById('marco')
   let grama = document.getElementById('grama')
   let text = document.getElementById('text')
-  let header = document.querySelector('header')
 
   window.addEventListener('scroll', () => {
     let value = window.scrollY
