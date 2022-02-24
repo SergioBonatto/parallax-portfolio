@@ -110,7 +110,7 @@ var changeHeaderWhenScroll = () => {
   }
 }
 
-//Back to top button
+//Back to top button, voltar par o topo
 const backToTopButton = document.querySelector('.back-to-top')
 
 var backToTop = () => {
@@ -124,7 +124,7 @@ var backToTop = () => {
 // Menu ativo conforme seção visível na página
 const sections = document.querySelectorAll('main section[id]')
 
-var activateMenuAtCurrentSection = () => {
+let activateMenuAtCurrentSection = () => {
   /* divide a alura da tela em 8, multiplica por 4 e soma com o deslocamento do eixo Y */
   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
   /* Para cada item na lista de sessões seção */
