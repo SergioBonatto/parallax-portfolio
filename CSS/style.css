@@ -295,6 +295,8 @@ section img#moon {
 section img#marco {
   z-index: 9;
   position: absolute;
+  max-height: 65vh;
+  margin-top: 31.9vh;
 }
 /*
 section img#mountains_between {
@@ -376,6 +378,7 @@ section img#grama {
 #about .image {
   position: relative;
   background-color: #1e2d59;
+  margin: auto;
 }
 
 #about .image img {
@@ -575,6 +578,12 @@ footer .social a:hover {
     margin-top: var(--header-height);
   }
 
+  section img#marco {
+    margin-top: 6vh;
+    z-index: 9;
+    position: absolute;
+    max-height: 100vh;
+  }
   /* Home */
 
   #home .container {
@@ -606,6 +615,9 @@ footer .social a:hover {
     top: 99vh;
   }
   /* About */
+  #about {
+    padding-bottom: 35vh;
+  }
   #about .container {
     margin: 0 auto;
     grid-auto-flow: column;
@@ -619,6 +631,7 @@ footer .social a:hover {
     width: 22rem;
     position: relative;
     z-index: 1000;
+    margin-top: -13rem;
   }
 
   #about .text .title {
@@ -636,6 +649,11 @@ footer .social a:hover {
   }
 
   /* Contact */
+
+  #contact {
+    margin-bottom: -20vh;
+  }
+
   #contact .container {
     grid-auto-flow: column;
     align-items: center;
