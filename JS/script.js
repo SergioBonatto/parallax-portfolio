@@ -1,45 +1,59 @@
 // saudação por horário
-
+// capturo o horario do dispositivo
 let now = new Date()
 let hora = now.getHours()
-
-console.log(hora)
-
+//defino os elementos que quero alterar
 let oi = window.document.getElementById('text')
 let satelite = window.document.getElementById('moon')
 let estrela = window.document.getElementById('stars')
 
+//se for entre 5 horas da manha e 12 horas
 if (hora >= 5 && hora < 12) {
+  // a mensagem é de bom dia
   oi.innerHTML = 'Bom dia!'
+  //altero o  elemento satélite para o Sol
   satelite.src = './Imagens/parallax/sol.png'
+  //defino o tamanho
   satelite.style.height = '100px'
   satelite.style.marginTop = '100px'
+  // e a posição
   satelite.style.zIndex = '0'
+  //mudo a cor de fundo para um azul similar ao céu de dia
   document.body.style.background = '#2fb3eb'
-  //estrela.style.display = "none";
+  // tiro as estrelas e coloco nuvens no lugar
   estrela.src = './Imagens/parallax/nuvens.png'
+  //altero o tamanho das nuvens
   estrela.style.height = '90%'
+  // e coloco na frente do sol
   estrela.style.zIndex = '1'
-} else if (hora >= 12 && hora < 18) {
+}
+// se não, se for entre 12 horas e 18 da tarde
+else if (hora >= 12 && hora < 18) {
+  // mudo a mensagem para "Boa tarde"
   oi.innerHTML = 'Boa tarde!'
+  // o resto permanece igual ao da manhã
   satelite.src = './Imagens/parallax/sol.png'
   satelite.style.height = '100px'
   satelite.style.marginTop = '100px'
   satelite.style.zIndex = '0'
   document.body.style.background = '#2fb3eb'
-  //estrela.style.display = "none";
   estrela.src = './Imagens/parallax/nuvens.png'
   estrela.style.height = '90%'
   estrela.style.zIndex = '1'
-} else {
+}
+// se não for manhã e nem tarde
+else {
+  // a mensagem vira "Boa noite"
   oi.innerHTML = 'Boa noite!'
+  // a lua vem para a frente
   satelite.style.zIndex = '1'
+  // e as estrelas vão para o fundo
   estrela.style.zIndex = '0'
 }
 
 //movimentação paralax
-
 let paralax = () => {
+  // defino os elementos que movimentarei
   let stars = document.getElementById('stars')
   let moon = document.getElementById('moon')
   let mountains_behind = document.getElementById('mountains_behind')
@@ -49,6 +63,7 @@ let paralax = () => {
   let grama = document.getElementById('grama')
   let text = document.getElementById('text')
 
+  //ao movimentar o scroll, cada elemento se moverá uma distancia
   window.addEventListener('scroll', () => {
     let value = window.scrollY
     stars.style.left = `${value * 0.25}px`
@@ -61,7 +76,6 @@ let paralax = () => {
     text.style.marginTop = `${value * 0.75}px`
   })
 }
-
 paralax()
 
 const nav = document.querySelector('#header nav')
