@@ -58,7 +58,6 @@ let paralax = () => {
     mountains_front.style.top = `${value * 1}px`
     text.style.marginLeft = `${value * 3.5}px`
     text.style.marginTop = `${value * 0.75}px`
-    header.style.top = `${value * 0.5}px`
   })
 }
 
