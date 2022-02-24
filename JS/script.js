@@ -3,6 +3,8 @@
 let now = new Date()
 let hora = now.getHours()
 
+console.log(hora)
+
 let oi = window.document.getElementById('text')
 let satelite = window.document.getElementById('moon')
 let estrela = window.document.getElementById('stars')
